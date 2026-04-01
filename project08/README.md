@@ -76,7 +76,7 @@ I also hit a major hurdle when the initial path predictions were inconsistent. I
 ## Other member
 **Meghana Ravi -** This project was a little difficult for me to follow in terms of the implementation at first. I understood the concept of HMMs and the Viterbi algorithm well, but figuring out how to make the implementation as general as possible confused me a lot. Working it out with my group members really helped, and once we got started on the pseudocode I was able to follow much better. Going through the design and discussing how different parts of the algorithm connected helped me understand how to structure the code for reuse. Making code reusable for other algorithms or future use isn't something I've done before so this project was a great learning experience for me.
 
-**Connor Crawford -**
+**Connor Crawford -** I thought that most valuable part of this project was thinking through, as a group, how to set up our project for reusability. It required us to think through what is most vital to an HMM in general (i.e. what is common to all HMMs) and what is more specific to an algorithmic process involving HMMs (like the viterbi algorithm). We decided that we could make a broader HMM class that contains states, initial probabilities, emission probabilites, and state transition probabilities as attributes and simple methods like accessing probabilities and calculating log values. This class was subsequently inherited and used in a class for the Viterbi algorithm. Having that broader HMM class to inherit should prevent us from having redundant code when we implement future HMM algorithms. 
 
 # Generative AI Appendix
 As per the syllabus
